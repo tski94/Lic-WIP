@@ -33,9 +33,19 @@
 		3D80E2601E6E59CC0054EE60 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80E24E1E6E59CC0054EE60 /* IQToolbar.swift */; };
 		3D80E2611E6E59CC0054EE60 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80E24F1E6E59CC0054EE60 /* IQUIView+IQKeyboardToolbar.swift */; };
 		3D80E2621E6E59CC0054EE60 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3D80E2511E6E59CC0054EE60 /* IQKeyboardManager.bundle */; };
-		3D8B27AC1E77CAB800BA1CD5 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B27AB1E77CAB800BA1CD5 /* LoginTextField.swift */; };
 		3DC382181E5F75000090C7FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC382171E5F75000090C7FE /* LoginViewController.swift */; };
 		3DC3821A1E5F750E0090C7FE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC382191E5F750E0090C7FE /* RegisterViewController.swift */; };
+		3DE593A91E9180B800E8EC47 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE5939D1E9180B800E8EC47 /* AkiraTextField.swift */; };
+		3DE593AA1E9180B800E8EC47 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE5939E1E9180B800E8EC47 /* HoshiTextField.swift */; };
+		3DE593AB1E9180B800E8EC47 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DE5939F1E9180B800E8EC47 /* Info.plist */; };
+		3DE593AC1E9180B800E8EC47 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE593A01E9180B800E8EC47 /* IsaoTextField.swift */; };
+		3DE593AD1E9180B800E8EC47 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE593A11E9180B800E8EC47 /* JiroTextField.swift */; };
+		3DE593AE1E9180B800E8EC47 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE593A21E9180B800E8EC47 /* KaedeTextField.swift */; };
+		3DE593AF1E9180B800E8EC47 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE593A31E9180B800E8EC47 /* MadokaTextField.swift */; };
+		3DE593B01E9180B800E8EC47 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE593A41E9180B800E8EC47 /* MinoruTextField.swift */; };
+		3DE593B11E9180B800E8EC47 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE593A61E9180B800E8EC47 /* TextFieldEffects.swift */; };
+		3DE593B21E9180B800E8EC47 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE593A71E9180B800E8EC47 /* YokoTextField.swift */; };
+		3DE593B31E9180B800E8EC47 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE593A81E9180B800E8EC47 /* YoshikoTextField.swift */; };
 		3DF62C021E5DF37900F0B999 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DF62C011E5DF37900F0B999 /* GoogleService-Info.plist */; };
 		3DF62C031E5DF37900F0B999 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DF62C011E5DF37900F0B999 /* GoogleService-Info.plist */; };
 		3DF62C041E5DF37900F0B999 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DF62C011E5DF37900F0B999 /* GoogleService-Info.plist */; };
@@ -94,10 +104,21 @@
 		3D80E24E1E6E59CC0054EE60 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
 		3D80E24F1E6E59CC0054EE60 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		3D80E2511E6E59CC0054EE60 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
-		3D8B27AB1E77CAB800BA1CD5 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		3D8B27AE1E7C817000BA1CD5 /* Lic-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lic-Bridging-Header.h"; sourceTree = "<group>"; };
 		3DC382171E5F75000090C7FE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3DC382191E5F750E0090C7FE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3DE5939D1E9180B800E8EC47 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/AkiraTextField.swift"; sourceTree = "<group>"; };
+		3DE5939E1E9180B800E8EC47 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/HoshiTextField.swift"; sourceTree = "<group>"; };
+		3DE5939F1E9180B800E8EC47 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/Info.plist"; sourceTree = "<group>"; };
+		3DE593A01E9180B800E8EC47 /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/IsaoTextField.swift"; sourceTree = "<group>"; };
+		3DE593A11E9180B800E8EC47 /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/JiroTextField.swift"; sourceTree = "<group>"; };
+		3DE593A21E9180B800E8EC47 /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/KaedeTextField.swift"; sourceTree = "<group>"; };
+		3DE593A31E9180B800E8EC47 /* MadokaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/MadokaTextField.swift"; sourceTree = "<group>"; };
+		3DE593A41E9180B800E8EC47 /* MinoruTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/MinoruTextField.swift"; sourceTree = "<group>"; };
+		3DE593A51E9180B800E8EC47 /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextFieldEffects.h; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/TextFieldEffects.h"; sourceTree = "<group>"; };
+		3DE593A61E9180B800E8EC47 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/TextFieldEffects.swift"; sourceTree = "<group>"; };
+		3DE593A71E9180B800E8EC47 /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/YokoTextField.swift"; sourceTree = "<group>"; };
+		3DE593A81E9180B800E8EC47 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/YoshikoTextField.swift"; sourceTree = "<group>"; };
 		3DF62C011E5DF37900F0B999 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		40E9E3A619E07B4AB1A47669 /* Pods-Lic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lic/Pods-Lic.release.xcconfig"; sourceTree = "<group>"; };
 		7CF03D0BEEAB41E4F14829F1 /* Pods_LicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +165,7 @@
 		3D114EEB1E5A888000D4AC6F = {
 			isa = PBXGroup;
 			children = (
+				3DE5939C1E91808400E8EC47 /* Custom Controls */,
 				3DC382161E5F74EC0090C7FE /* Controllers */,
 				3D114EF61E5A888000D4AC6F /* Lic */,
 				3D114F0E1E5A888100D4AC6F /* LicTests */,
@@ -267,13 +289,31 @@
 			isa = PBXGroup;
 			children = (
 				3DC382171E5F75000090C7FE /* LoginViewController.swift */,
-				3D8B27AB1E77CAB800BA1CD5 /* LoginTextField.swift */,
 				3DC382191E5F750E0090C7FE /* RegisterViewController.swift */,
 				3D123B6D1E6CDA150064E8ED /* CameraViewController.swift */,
 				3D80E2341E6DECDB0054EE60 /* LicFeedViewController.swift */,
 				3D80E2361E6DEE4A0054EE60 /* UserPageViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3DE5939C1E91808400E8EC47 /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				3DE5939D1E9180B800E8EC47 /* AkiraTextField.swift */,
+				3DE5939E1E9180B800E8EC47 /* HoshiTextField.swift */,
+				3DE5939F1E9180B800E8EC47 /* Info.plist */,
+				3DE593A01E9180B800E8EC47 /* IsaoTextField.swift */,
+				3DE593A11E9180B800E8EC47 /* JiroTextField.swift */,
+				3DE593A21E9180B800E8EC47 /* KaedeTextField.swift */,
+				3DE593A31E9180B800E8EC47 /* MadokaTextField.swift */,
+				3DE593A41E9180B800E8EC47 /* MinoruTextField.swift */,
+				3DE593A51E9180B800E8EC47 /* TextFieldEffects.h */,
+				3DE593A61E9180B800E8EC47 /* TextFieldEffects.swift */,
+				3DE593A71E9180B800E8EC47 /* YokoTextField.swift */,
+				3DE593A81E9180B800E8EC47 /* YoshikoTextField.swift */,
+			);
+			name = "Custom Controls";
 			sourceTree = "<group>";
 		};
 		927FF1C4E8A8857F69866A36 /* Frameworks */ = {
@@ -401,6 +441,7 @@
 			files = (
 				3D80E2621E6E59CC0054EE60 /* IQKeyboardManager.bundle in Resources */,
 				3D114F051E5A888000D4AC6F /* LaunchScreen.storyboard in Resources */,
+				3DE593AB1E9180B800E8EC47 /* Info.plist in Resources */,
 				3DF62C021E5DF37900F0B999 /* GoogleService-Info.plist in Resources */,
 				3D114F021E5A888000D4AC6F /* Assets.xcassets in Resources */,
 				3D114EFD1E5A888000D4AC6F /* Main.storyboard in Resources */,
@@ -478,30 +519,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE593AF1E9180B800E8EC47 /* MadokaTextField.swift in Sources */,
 				3D80E2551E6E59CC0054EE60 /* IQUIView+Hierarchy.swift in Sources */,
 				3D80E2541E6E59CC0054EE60 /* IQUITextFieldView+Additions.swift in Sources */,
 				3DC382181E5F75000090C7FE /* LoginViewController.swift in Sources */,
 				3D80E25D1E6E59CC0054EE60 /* IQBarButtonItem.swift in Sources */,
 				3D80E2351E6DECDB0054EE60 /* LicFeedViewController.swift in Sources */,
 				3D123B6E1E6CDA150064E8ED /* CameraViewController.swift in Sources */,
+				3DE593AC1E9180B800E8EC47 /* IsaoTextField.swift in Sources */,
 				3D80E25F1E6E59CC0054EE60 /* IQTitleBarButtonItem.swift in Sources */,
 				3D80E2591E6E59CC0054EE60 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				3D80E25B1E6E59CC0054EE60 /* IQKeyboardReturnKeyHandler.swift in Sources */,
-				3D8B27AC1E77CAB800BA1CD5 /* LoginTextField.swift in Sources */,
 				3DC3821A1E5F750E0090C7FE /* RegisterViewController.swift in Sources */,
+				3DE593AA1E9180B800E8EC47 /* HoshiTextField.swift in Sources */,
 				3D80E2561E6E59CC0054EE60 /* IQUIViewController+Additions.swift in Sources */,
 				3D80E2611E6E59CC0054EE60 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				3D80E25A1E6E59CC0054EE60 /* IQKeyboardManager.swift in Sources */,
+				3DE593B21E9180B800E8EC47 /* YokoTextField.swift in Sources */,
+				3DE593A91E9180B800E8EC47 /* AkiraTextField.swift in Sources */,
 				3D80E2521E6E59CC0054EE60 /* IQNSArray+Sort.swift in Sources */,
+				3DE593B01E9180B800E8EC47 /* MinoruTextField.swift in Sources */,
 				3D80E25C1E6E59CC0054EE60 /* IQTextView.swift in Sources */,
 				3D80E2581E6E59CC0054EE60 /* IQKeyboardManagerConstants.swift in Sources */,
 				3D114F001E5A888000D4AC6F /* Lic.xcdatamodeld in Sources */,
 				3D114EF81E5A888000D4AC6F /* AppDelegate.swift in Sources */,
 				3D80E2601E6E59CC0054EE60 /* IQToolbar.swift in Sources */,
 				3D80E25E1E6E59CC0054EE60 /* IQPreviousNextView.swift in Sources */,
+				3DE593B11E9180B800E8EC47 /* TextFieldEffects.swift in Sources */,
+				3DE593B31E9180B800E8EC47 /* YoshikoTextField.swift in Sources */,
 				3D80E2571E6E59CC0054EE60 /* IQUIWindow+Hierarchy.swift in Sources */,
 				3D80E2371E6DEE4A0054EE60 /* UserPageViewController.swift in Sources */,
+				3DE593AE1E9180B800E8EC47 /* KaedeTextField.swift in Sources */,
 				3D80E2531E6E59CC0054EE60 /* IQUIScrollView+Additions.swift in Sources */,
+				3DE593AD1E9180B800E8EC47 /* JiroTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

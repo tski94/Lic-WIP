@@ -103,10 +103,9 @@ class CameraViewController: UIViewController,
         let ref = FIRDatabase.database().reference()
         let storage = FIRStorage.storage().reference(forURL: "gs://lic-app-95481.appspot.com") //Storage Path
             
-    //    let geofireRef = FIRDatabase.database().reference().child("Lics").child(uid) //Geolocation
-       // let geoFire = GeoFire(firebaseRef: geofireRef)
+
         let key = ref.child("Lics").childByAutoId().key
-    //geoFire?.setLocation(CLLocation(latitude: userLat!, longitude: userLong!), forKey: "\(key)")
+
         let imageRef = storage.child("Lics").child(uid).child("\(key).jpg")
         
         let data = UIImageJPEGRepresentation(self.selectedImage.image!, 0.6)
@@ -122,7 +121,8 @@ class CameraViewController: UIViewController,
                     let feed = ["userID" : uid,
                                 "pathtoimage" : url.absoluteString,
                                 "netVotes" : 0,
-                    "postID" : key,
+                    "latitude": self.userLat!,
+                    "longitude": self.userLong!,
                     "userEmail" : FIRAuth.auth()!.currentUser!.email as Any] as [String: Any]
                     
                     let postFeed = ["\(key)" : feed]
