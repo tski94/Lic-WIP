@@ -207,25 +207,6 @@
             </objects>
             <point key="canvasLocation" x="888.75" y="-590.49295774647885"/>
         </scene>
-        <!--Lic Feed-->
-        <scene sceneID="5p2-gM-bau">
-            <objects>
-                <viewController storyboardIdentifier="licfeed" id="BKq-mU-tLS" customClass="LicFeedViewController" customModule="Lic" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="s4X-Y6-PCD"/>
-                        <viewControllerLayoutGuide type="bottom" id="R0H-N2-UdH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ckj-4W-IHl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Lic Feed" id="v4d-eH-5RT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4tt-V6-71l" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1847" y="-257"/>
-        </scene>
         <!--Camera-->
         <scene sceneID="7ve-Sx-F4X">
             <objects>
@@ -398,13 +379,96 @@
                     </tabBar>
                     <connections>
                         <segue destination="ezI-uA-HX5" kind="relationship" relationship="viewControllers" id="Ypx-Vl-PrO"/>
-                        <segue destination="BKq-mU-tLS" kind="relationship" relationship="viewControllers" id="aN1-dL-1Oy"/>
                         <segue destination="hKO-Vl-KcX" kind="relationship" relationship="viewControllers" id="tz4-Zp-IOc"/>
+                        <segue destination="wTE-1r-4rK" kind="relationship" relationship="viewControllers" id="sa5-lt-PbD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ST-bf-b3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="889" y="137"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="PR8-eH-e6X">
+            <objects>
+                <tableViewController id="wTE-1r-4rK" customClass="FeedTableViewController" customModule="Lic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="49" sectionHeaderHeight="28" sectionFooterHeight="28" id="stg-8S-pWP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="403" id="97X-rf-Ang" customClass="PostCell" customModule="Lic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="403"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="97X-rf-Ang" id="Rgr-jG-wjc">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="402"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picexample1" translatesAutoresizingMaskIntoConstraints="NO" id="JLx-CM-AEN">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="320" id="1ej-jK-3eb"/>
+                                                <constraint firstAttribute="width" constant="320" id="FPB-Az-WtL"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="1rQ-ng-3G0">
+                                            <rect key="frame" x="283" y="323" width="25" height="71"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofB-zb-g73">
+                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="2NM-GT-Zma"/>
+                                                        <constraint firstAttribute="height" constant="25" id="QJi-mY-Iqh"/>
+                                                    </constraints>
+                                                    <state key="normal" backgroundImage="Upvote Pressed"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWb-vy-g4E">
+                                                    <rect key="frame" x="3" y="23" width="19" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="19" id="qOY-IP-kV2"/>
+                                                        <constraint firstAttribute="height" constant="25" id="vJt-Ta-4R8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xv-qV-ap9">
+                                                    <rect key="frame" x="0.0" y="46" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="KKZ-ml-dtB"/>
+                                                        <constraint firstAttribute="height" constant="25" id="j2o-JE-7tf"/>
+                                                    </constraints>
+                                                    <state key="normal" backgroundImage="DownVote Not Pressed"/>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="JLx-CM-AEN" firstAttribute="leading" secondItem="Rgr-jG-wjc" secondAttribute="leading" id="08f-da-kDd"/>
+                                        <constraint firstAttribute="trailing" secondItem="JLx-CM-AEN" secondAttribute="trailing" id="D7U-Wt-eZa"/>
+                                        <constraint firstAttribute="bottom" secondItem="1rQ-ng-3G0" secondAttribute="bottom" constant="8" id="EKH-uh-xyz"/>
+                                        <constraint firstItem="JLx-CM-AEN" firstAttribute="top" secondItem="Rgr-jG-wjc" secondAttribute="top" id="Lf9-jY-HmK"/>
+                                        <constraint firstAttribute="trailing" secondItem="1rQ-ng-3G0" secondAttribute="trailing" constant="12" id="efX-Jq-Y4N"/>
+                                        <constraint firstItem="1rQ-ng-3G0" firstAttribute="top" secondItem="JLx-CM-AEN" secondAttribute="bottom" constant="3" id="pLC-i8-uY4"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="downvoteButton" destination="2Xv-qV-ap9" id="Imo-z9-GhT"/>
+                                    <outlet property="netVoteLabel" destination="NWb-vy-g4E" id="J9V-IY-Dzi"/>
+                                    <outlet property="postImage" destination="JLx-CM-AEN" id="OIE-5v-goe"/>
+                                    <outlet property="upvoteButton" destination="ofB-zb-g73" id="322-Pn-WUh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wTE-1r-4rK" id="yZi-3Y-8Pj"/>
+                            <outlet property="delegate" destination="wTE-1r-4rK" id="bQZ-uf-v3Y"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Feed" id="A1a-vS-vUF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nwd-ek-k7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846.875" y="-319.01408450704224"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A7G-rF-2SK">
@@ -427,11 +491,14 @@
         <image name="Background" width="320" height="568"/>
         <image name="BacktoLogin" width="125" height="19"/>
         <image name="Create an AccountButton" width="169" height="17"/>
+        <image name="DownVote Not Pressed" width="25" height="25"/>
         <image name="GetStartedButton" width="181" height="50"/>
         <image name="Husky_04" width="1207" height="1207"/>
         <image name="LicTitleLabel" width="73" height="52"/>
         <image name="LoginButton" width="162" height="50"/>
         <image name="RegisterLabel" width="213" height="28"/>
+        <image name="Upvote Pressed" width="25" height="25"/>
+        <image name="picexample1" width="306" height="306"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BMW-Wj-Zud"/>

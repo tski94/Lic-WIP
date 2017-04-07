@@ -14,7 +14,6 @@
 		3D114F051E5A888000D4AC6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D114F031E5A888000D4AC6F /* LaunchScreen.storyboard */; };
 		3D114F1B1E5A888100D4AC6F /* LicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D114F1A1E5A888100D4AC6F /* LicUITests.swift */; };
 		3D123B6E1E6CDA150064E8ED /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D123B6D1E6CDA150064E8ED /* CameraViewController.swift */; };
-		3D80E2351E6DECDB0054EE60 /* LicFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80E2341E6DECDB0054EE60 /* LicFeedViewController.swift */; };
 		3D80E2371E6DEE4A0054EE60 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80E2361E6DEE4A0054EE60 /* UserPageViewController.swift */; };
 		3D80E2521E6E59CC0054EE60 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80E23C1E6E59CC0054EE60 /* IQNSArray+Sort.swift */; };
 		3D80E2531E6E59CC0054EE60 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80E23D1E6E59CC0054EE60 /* IQUIScrollView+Additions.swift */; };
@@ -33,6 +32,9 @@
 		3D80E2601E6E59CC0054EE60 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80E24E1E6E59CC0054EE60 /* IQToolbar.swift */; };
 		3D80E2611E6E59CC0054EE60 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80E24F1E6E59CC0054EE60 /* IQUIView+IQKeyboardToolbar.swift */; };
 		3D80E2621E6E59CC0054EE60 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3D80E2511E6E59CC0054EE60 /* IQKeyboardManager.bundle */; };
+		3DAD219D1E9708C10058A21B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD219C1E9708C10058A21B /* Post.swift */; };
+		3DAD219F1E970D0D0058A21B /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD219E1E970D0D0058A21B /* FeedTableViewController.swift */; };
+		3DAD21A11E971BBA0058A21B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD21A01E971BBA0058A21B /* PostCell.swift */; };
 		3DC382181E5F75000090C7FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC382171E5F75000090C7FE /* LoginViewController.swift */; };
 		3DC3821A1E5F750E0090C7FE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC382191E5F750E0090C7FE /* RegisterViewController.swift */; };
 		3DE593A91E9180B800E8EC47 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE5939D1E9180B800E8EC47 /* AkiraTextField.swift */; };
@@ -84,7 +86,6 @@
 		3D114F1A1E5A888100D4AC6F /* LicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicUITests.swift; sourceTree = "<group>"; };
 		3D114F1C1E5A888100D4AC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D123B6D1E6CDA150064E8ED /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		3D80E2341E6DECDB0054EE60 /* LicFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicFeedViewController.swift; sourceTree = "<group>"; };
 		3D80E2361E6DEE4A0054EE60 /* UserPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPageViewController.swift; sourceTree = "<group>"; };
 		3D80E23C1E6E59CC0054EE60 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		3D80E23D1E6E59CC0054EE60 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
@@ -105,6 +106,9 @@
 		3D80E24F1E6E59CC0054EE60 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		3D80E2511E6E59CC0054EE60 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		3D8B27AE1E7C817000BA1CD5 /* Lic-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lic-Bridging-Header.h"; sourceTree = "<group>"; };
+		3DAD219C1E9708C10058A21B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3DAD219E1E970D0D0058A21B /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		3DAD21A01E971BBA0058A21B /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		3DC382171E5F75000090C7FE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3DC382191E5F750E0090C7FE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3DE5939D1E9180B800E8EC47 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/AkiraTextField.swift"; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 		3D114EEB1E5A888000D4AC6F = {
 			isa = PBXGroup;
 			children = (
+				3DAD219B1E96E2C20058A21B /* Tables */,
 				3DE5939C1E91808400E8EC47 /* Custom Controls */,
 				3DC382161E5F74EC0090C7FE /* Controllers */,
 				3D114EF61E5A888000D4AC6F /* Lic */,
@@ -285,14 +290,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		3DAD219B1E96E2C20058A21B /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				3DAD219C1E9708C10058A21B /* Post.swift */,
+				3DAD21A01E971BBA0058A21B /* PostCell.swift */,
+			);
+			name = Tables;
+			sourceTree = "<group>";
+		};
 		3DC382161E5F74EC0090C7FE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				3DC382171E5F75000090C7FE /* LoginViewController.swift */,
 				3DC382191E5F750E0090C7FE /* RegisterViewController.swift */,
 				3D123B6D1E6CDA150064E8ED /* CameraViewController.swift */,
-				3D80E2341E6DECDB0054EE60 /* LicFeedViewController.swift */,
 				3D80E2361E6DEE4A0054EE60 /* UserPageViewController.swift */,
+				3DAD219E1E970D0D0058A21B /* FeedTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -524,14 +538,16 @@
 				3D80E2541E6E59CC0054EE60 /* IQUITextFieldView+Additions.swift in Sources */,
 				3DC382181E5F75000090C7FE /* LoginViewController.swift in Sources */,
 				3D80E25D1E6E59CC0054EE60 /* IQBarButtonItem.swift in Sources */,
-				3D80E2351E6DECDB0054EE60 /* LicFeedViewController.swift in Sources */,
 				3D123B6E1E6CDA150064E8ED /* CameraViewController.swift in Sources */,
 				3DE593AC1E9180B800E8EC47 /* IsaoTextField.swift in Sources */,
 				3D80E25F1E6E59CC0054EE60 /* IQTitleBarButtonItem.swift in Sources */,
 				3D80E2591E6E59CC0054EE60 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				3DAD219F1E970D0D0058A21B /* FeedTableViewController.swift in Sources */,
 				3D80E25B1E6E59CC0054EE60 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				3DC3821A1E5F750E0090C7FE /* RegisterViewController.swift in Sources */,
 				3DE593AA1E9180B800E8EC47 /* HoshiTextField.swift in Sources */,
+				3DAD219D1E9708C10058A21B /* Post.swift in Sources */,
+				3DAD21A11E971BBA0058A21B /* PostCell.swift in Sources */,
 				3D80E2561E6E59CC0054EE60 /* IQUIViewController+Additions.swift in Sources */,
 				3D80E2611E6E59CC0054EE60 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				3D80E25A1E6E59CC0054EE60 /* IQKeyboardManager.swift in Sources */,
