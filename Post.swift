@@ -43,9 +43,9 @@ struct Post  {
     func toAnyObject() -> Any {
         return [
             "netVotes": netVotes,
-            "imgURL": imgURL,
-            "imgLat": imgLat,
-            "imgLong": imgLong,
+            "pathtoimage": imgURL,
+            "latitude": imgLat,
+            "longitude": imgLong,
             "userID": userID
         ]
     }

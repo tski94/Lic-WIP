@@ -93,7 +93,7 @@ class CameraViewController: UIViewController,
        //Checks to make sure a picture is selected
         if selectedImage.image != nil {
         locationManager.startUpdatingLocation()
-        let imageData = UIImageJPEGRepresentation(selectedImage.image!, 0.6) //Compression Quality
+        let imageData = UIImageJPEGRepresentation(selectedImage.image!, 0.5) //Compression Quality
         let compressedJPEG  = UIImage(data: imageData!)
         UIImageWriteToSavedPhotosAlbum(compressedJPEG!, nil, nil, nil)
         
@@ -108,7 +108,7 @@ class CameraViewController: UIViewController,
 
         let imageRef = storage.child("Lics").child(uid).child("\(key).jpg")
         
-        let data = UIImageJPEGRepresentation(self.selectedImage.image!, 0.6)
+        let data = UIImageJPEGRepresentation(self.selectedImage.image!, 0.2)
         
         _ = imageRef.put(data!, metadata: nil) { (metadata, error) in
             if error != nil {

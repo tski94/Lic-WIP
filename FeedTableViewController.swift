@@ -12,7 +12,7 @@ import Firebase
 class FeedTableViewController: UITableViewController {
 
     var posts: [Post]?
-    var ref: FIRDatabaseReference = FIRDatabase.database().reference()
+    let ref = FIRDatabase.database().reference(withPath: "Lics")
     
     struct Storyboard {
         static let postCell = "PostCell"
@@ -23,29 +23,31 @@ class FeedTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDataFromFirebase()
-        // Uncomment the following line to preserve selection between presentations
-         self.clearsSelectionOnViewWillAppear = false
         tableView.estimatedRowHeight = Storyboard.postCellDefaultHeight
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.separatorColor = UIColor.clear
+        tableView.allowsMultipleSelectionDuringEditing = false
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     func loadDataFromFirebase() {
         
-        ref.child("Lics").observe(.value, with: { snapshot in
+        ref.observe(.value, with: { snapshot in
             var newposts: [Post] = []
             
             for dbItem in snapshot.children.allObjects {
-                let gItem = (snapshot: dbItem as! FIRDataSnapshot)
+                let postItem = (snapshot: dbItem as! FIRDataSnapshot)
                 
-                let newValue = Post(snapshot: gItem)
+                let newValue = Post(snapshot: postItem)
                 newposts.append(newValue)
             }
             
             //TO-DO SORT BY NETVOTES
-           // self.posts = newposts.sorted
+            self.posts = newposts
             self.tableView.reloadData()
             
         })
@@ -54,11 +56,11 @@ class FeedTableViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         if let posts = posts {
+            
             return posts.count
         }
         
