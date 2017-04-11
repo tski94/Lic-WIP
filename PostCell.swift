@@ -26,10 +26,6 @@ class PostCell: UITableViewCell {
     
     func updateUI() {
         self.netVoteLabel.text = String(post.netVotes)
-        upvoteButton.setBackgroundImage(UIImage(named: "UpVote Neutral"), for: UIControlState.normal)
-        downvoteButton.setBackgroundImage(UIImage(named: "DownVote Neutral"), for: UIControlState.normal)
-        upvoteButton.setBackgroundImage(UIImage(named: "Upvote Pressed"), for: UIControlState.selected)
-        downvoteButton.setBackgroundImage(UIImage(named: "Downvote Pressed"), for: UIControlState.selected)
         let imgNSURL = NSURL(string: post.imgURL)
         DispatchQueue.global().async {
             let data = try? Data(contentsOf: imgNSURL as! URL)
@@ -58,7 +54,6 @@ class PostCell: UITableViewCell {
             }
     
         }
-    downvoteButton.setBackgroundImage(UIImage(named: "DownVote Not Pressed"), for: UIControlState.normal)
     
         
     }
@@ -82,7 +77,6 @@ class PostCell: UITableViewCell {
             }
             
         }
-    upvoteButton.setBackgroundImage(UIImage(named: "UpVote Not Pressed"), for: UIControlState.normal)
     
         
     }
