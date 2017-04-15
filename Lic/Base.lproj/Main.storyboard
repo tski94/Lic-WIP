@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u5P-05-fkT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u5P-05-fkT">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -201,11 +201,11 @@
             </objects>
             <point key="canvasLocation" x="133" y="-590"/>
         </scene>
-        <!--My Lics-->
+        <!--Navigation Controller-->
         <scene sceneID="UuI-Rn-nWj">
             <objects>
                 <navigationController id="68j-5k-mhz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Lics" id="wYe-l6-488"/>
+                    <tabBarItem key="tabBarItem" title="" id="wYe-l6-488"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mYQ-nq-1uC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -227,11 +227,11 @@
             </objects>
             <point key="canvasLocation" x="1898" y="926"/>
         </scene>
-        <!--Camera-->
+        <!--Navigation Controller-->
         <scene sceneID="7dc-Kz-dVA">
             <objects>
                 <navigationController id="OFA-KS-jgv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Camera" id="U9X-OV-1OK"/>
+                    <tabBarItem key="tabBarItem" title="" id="U9X-OV-1OK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Ty-1G-jhn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -297,7 +297,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" id="sB7-T7-dtx"/>
+                    <tabBarItem key="tabBarItem" title="" id="sB7-T7-dtx"/>
                     <navigationItem key="navigationItem" title="Take a Lic" id="kcu-TD-6iI">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="iES-uj-efD">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -327,7 +327,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="424"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="15t-Bu-Fhq" id="Wh1-X2-ZbH">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="423"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="424"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HVx-I4-DAZ">
@@ -410,7 +410,7 @@
                             <outlet property="delegate" destination="tAF-XL-NjC" id="V0i-RL-nY8"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="My Lics" id="HyE-8w-eW4"/>
+                    <tabBarItem key="tabBarItem" title="" id="HyE-8w-eW4"/>
                     <navigationItem key="navigationItem" title="My Lics" id="ogG-W5-2Jo">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="nWc-QA-fuT">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -492,7 +492,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="424"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="97X-rf-Ang" id="Rgr-jG-wjc">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="423"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="424"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JLx-CM-AEN">
@@ -575,18 +575,18 @@
                             <outlet property="delegate" destination="wTE-1r-4rK" id="bQZ-uf-v3Y"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Feed" id="A1a-vS-vUF"/>
+                    <tabBarItem key="tabBarItem" title="" id="A1a-vS-vUF"/>
                     <navigationItem key="navigationItem" title="Lic Feed" id="sCL-BY-4fY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwd-ek-k7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2903" y="-590"/>
         </scene>
-        <!--Feed-->
+        <!--Navigation Controller-->
         <scene sceneID="L0D-C7-hPl">
             <objects>
                 <navigationController id="0cK-AG-xUO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Feed" id="7i8-lA-UaM"/>
+                    <tabBarItem key="tabBarItem" title="" id="7i8-lA-UaM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rK2-q6-FL4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

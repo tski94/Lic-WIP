@@ -16,6 +16,7 @@ class UserTableViewController: UITableViewController {
     let ref = FIRDatabase.database().reference(withPath: "Lics")
   //  @IBOutlet weak var visualEffectView: UIVisualEffectView!
   //  var effect: UIVisualEffect!
+    let uid = FIRAuth.auth()!.currentUser!.uid
     
     struct Storyboard {
         static let postCell = "PostCell"
@@ -37,7 +38,7 @@ class UserTableViewController: UITableViewController {
     }
     func loadDataFromFirebase() {
         
-        ref.observe(.value, with: { snapshot in
+        ref.queryOrdered(byChild: "userID").queryEqual(toValue: uid).observe(.value, with: { snapshot in
             var newposts: [Post] = []
             
             for dbItem in snapshot.children.allObjects {
@@ -90,9 +91,9 @@ class UserTableViewController: UITableViewController {
         settingsView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
         settingsView.alpha = 0
         
-        UIView.animate(withDuration: 0.4) {
+        UIView.animate(withDuration: 0.3) {
         //self.visualEffectView.effect = self.effect
-            self.settingsView.alpha = 1
+            self.settingsView.alpha = 0.7
             self.settingsView.transform = CGAffineTransform.identity
             
         }

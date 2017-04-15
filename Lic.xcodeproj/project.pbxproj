@@ -35,6 +35,7 @@
 		3DAD219F1E970D0D0058A21B /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD219E1E970D0D0058A21B /* FeedTableViewController.swift */; };
 		3DAD21A11E971BBA0058A21B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD21A01E971BBA0058A21B /* PostCell.swift */; };
 		3DAD21A51E9D47010058A21B /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD21A41E9D47010058A21B /* UserTableViewController.swift */; };
+		3DAD21A71EA011FA0058A21B /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD21A61EA011FA0058A21B /* MainTabViewController.swift */; };
 		3DC382181E5F75000090C7FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC382171E5F75000090C7FE /* LoginViewController.swift */; };
 		3DC3821A1E5F750E0090C7FE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC382191E5F750E0090C7FE /* RegisterViewController.swift */; };
 		3DE593A91E9180B800E8EC47 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE5939D1E9180B800E8EC47 /* AkiraTextField.swift */; };
@@ -109,6 +110,7 @@
 		3DAD219E1E970D0D0058A21B /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		3DAD21A01E971BBA0058A21B /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		3DAD21A41E9D47010058A21B /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		3DAD21A61EA011FA0058A21B /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		3DC382171E5F75000090C7FE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3DC382191E5F750E0090C7FE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3DE5939D1E9180B800E8EC47 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = "../TextFieldEffects-master/TextFieldEffects/TextFieldEffects/AkiraTextField.swift"; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				3D123B6D1E6CDA150064E8ED /* CameraViewController.swift */,
 				3DAD219E1E970D0D0058A21B /* FeedTableViewController.swift */,
 				3DAD21A41E9D47010058A21B /* UserTableViewController.swift */,
+				3DAD21A61EA011FA0058A21B /* MainTabViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				3DAD219D1E9708C10058A21B /* Post.swift in Sources */,
 				3DAD21A11E971BBA0058A21B /* PostCell.swift in Sources */,
 				3D80E2561E6E59CC0054EE60 /* IQUIViewController+Additions.swift in Sources */,
+				3DAD21A71EA011FA0058A21B /* MainTabViewController.swift in Sources */,
 				3D80E2611E6E59CC0054EE60 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				3D80E25A1E6E59CC0054EE60 /* IQKeyboardManager.swift in Sources */,
 				3DE593B21E9180B800E8EC47 /* YokoTextField.swift in Sources */,

@@ -77,9 +77,9 @@ class FeedTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.postCell, for: indexPath) as! PostCell
         cell.post = self.posts?[indexPath.section]
-        
         return cell
     }
+    
     
     
 }
