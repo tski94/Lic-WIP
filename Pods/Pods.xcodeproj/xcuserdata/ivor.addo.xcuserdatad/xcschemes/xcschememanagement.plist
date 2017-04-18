@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GeoFire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,10 +29,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>049BA74E45F49EE6DB97D291916BE91D</key>
+		<key>09608759BA2D828E0DCDC3C35CA2054B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D5CEDECD3D8DC52EA507E0431BDA8A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,22 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B4CC71B3394A4822693797551BE96CAE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D442A1063E1FD2A0AB8ACF96C63173A4</key>
+		<key>DFF08956D4F26BAF4ED0F53236B0CC6A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E899D497D22C9105B098CA88CE5AD6A3</key>
+		<key>FFD367ED3B22B06280AFE8783B1B62AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

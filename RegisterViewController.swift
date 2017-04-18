@@ -71,6 +71,7 @@ class RegisterViewController: UIViewController {
     }
     
     func hideprogress() { //Hide activity indicator
+        self.registerActivityIndicator.stopAnimating()
         registerActivityIndicator.isHidden = true
         registerButton.isHidden = false
     }
@@ -78,6 +79,7 @@ class RegisterViewController: UIViewController {
     func showProgress() { //Show activity indicator
         registerActivityIndicator.isHidden = false
         registerButton.isHidden = true
+        self.registerActivityIndicator.startAnimating()
     }
     override func viewDidAppear(_ animated: Bool) {
         self.hideprogress()

@@ -12,6 +12,7 @@ import MobileCoreServices
 import Foundation
 import SystemConfiguration
 import CoreLocation
+import MapKit
 
 class CameraViewController: UIViewController,
     UIImagePickerControllerDelegate,
@@ -30,6 +31,10 @@ class CameraViewController: UIViewController,
             userLat = location.coordinate.latitude
         }
     }
+    
+    var locationName: String!
+
+    
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -55,6 +60,19 @@ class CameraViewController: UIViewController,
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         location = locations.last
         locationManager.stopUpdatingLocation()
+        CLGeocoder().reverseGeocodeLocation(location) { (placemark, error) in
+            if error != nil {
+                print("There was an error!")
+            } else {
+                if (placemark?.count)! > 0 {
+                    let pm = (placemark?[0])! as CLPlacemark
+                    self.locationName = (String(describing: pm.name!))
+                    
+                }
+                    
+                
+            }
+        }
     }
     
     //Take a picture
@@ -123,6 +141,7 @@ class CameraViewController: UIViewController,
                                 "netVotes" : 0,
                     "latitude": self.userLat!,
                     "longitude": self.userLong!,
+                    "locationName": self.locationName!,
                     "userEmail" : FIRAuth.auth()!.currentUser!.email as Any] as [String: Any]
                     
                     let postFeed = ["\(key)" : feed]

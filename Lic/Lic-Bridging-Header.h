@@ -6,5 +6,4 @@
 //  Copyright © 2017 Marquette University. All rights reserved.
 //
 
-#import <GeoFire/GeoFire.h>
-
+#import <SDWebImage/UIImageView+WebCache.h>

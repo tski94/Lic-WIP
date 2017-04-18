@@ -65,11 +65,14 @@ class LoginViewController: UIViewController {
     func showProgress() { //Show Activity Indicator
         loginActivityIndicator.isHidden = false
         loginButton.isHidden = true
+        self.loginActivityIndicator.startAnimating()
         
     }
     func hideProgress() { //Hide activity indicator. Insert function where need be
+        self.loginActivityIndicator.stopAnimating()
         loginActivityIndicator.isHidden = true
         loginButton.isHidden = false
+        
         
     }
     

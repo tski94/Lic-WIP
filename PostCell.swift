@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class PostCell: UITableViewCell {
 
@@ -29,12 +30,7 @@ class PostCell: UITableViewCell {
     func updateUI() {
         self.netVoteLabel.text = String(post.netVotes)
         let imgNSURL = NSURL(string: post.imgURL)
-        DispatchQueue.global().async {
-            let data = try? Data(contentsOf: imgNSURL as! URL)
-            DispatchQueue.main.async {
-                self.postImage.image = UIImage(data: data!)
-            }
-        }
+        postImage.sd_setImage(with: imgNSURL as URL?)
         
     }
 

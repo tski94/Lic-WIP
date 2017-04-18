@@ -11,9 +11,14 @@ import UIKit
 class MainTabViewController: UITabBarController {
 
     override func viewDidLoad() {
-  //TO-DO Customize Tab View Button
+        super.viewDidLoad()
+        self.tabBar.barTintColor = UIColor(red:0.75, green:0.76, blue:0.78, alpha:1.0)
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+    }
 
 }
